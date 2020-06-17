@@ -30,9 +30,9 @@ public class SearchProductAmazon {
 	    driver.findElement(By.xpath("//*[@value='Go']")).click();
 	}
 
-	@Then("Result page displays samsung mobiles")
-	public void result_page_displays_samsung_mobiles() {
-	    Assert.assertEquals("Amazon.in : Samsung mobiles", driver.getTitle());
+	@Then("Result page displays {string}")
+	public void result_page_displays_samsung_mobiles(String title) {
+	    Assert.assertEquals(title, driver.getTitle());
 	    
 	}
 

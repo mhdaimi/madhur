@@ -11,7 +11,8 @@ import cucumber.api.junit.Cucumber;
 		
 		features = "src\\test\\resources\\features\\",
 		glue = "in\\amazon\\stepDefinition",
-		monochrome = true
+		monochrome = true,
+		tags= {"@Smoke"}
 		
 		)
 
